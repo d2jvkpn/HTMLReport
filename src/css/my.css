@@ -1,0 +1,208 @@
+/* https://github.com/d2jvkpn/HTMLReport */
+
+body {
+    margin: 0px auto;
+    width: 90%;
+}
+
+/* navigation */
+.sidenav {
+    height: 100%;
+    width: 20%;
+    padding: 10px 10px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F0F0F0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.sidenav a {
+    text-decoration: none;
+    line-height: 25px;
+    font-size: small;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+a.nav1 {
+    font-size: medium;
+}
+
+/* paragraph */
+#main {
+    margin-left: 21%;
+    margin-right: 1%;
+    width: 78%;
+}
+
+#main > div p {
+    text-indent: 40px;
+    margin:0 auto;
+    letter-spacing:1px;
+    line-height: 30px;
+    margin: 0px auto;
+}
+
+#main > div > p:hover{
+    background-color: #E0E0F2;
+}
+
+/* header */
+header {
+    display: block;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+header p{
+    display: block;
+    margin: 0 0;
+    color: grey;
+}
+
+/* footer */
+footer {
+    display: block;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    padding: 10px 10px;
+    font-weight: 300;
+    font-size: small;
+}
+
+footer p{
+    margin: 0 0;
+    color: grey;
+    text-align: justify;
+    text-align: center;
+    padding: 10px;
+}
+
+hr{
+    color: #AAAAAA;
+    width: 100%;
+    size: 3;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: purple;
+}
+
+/* figure */
+figure + small {
+    display: block;
+    font-style: italic;
+    padding: 10px 0;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+figure img {
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 10px;
+    display: block;
+    page-break-before: avoid;
+    /* 'auto', 'always', 'avoid', 'left', 'inherit', or 'right' */
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: medium;
+    padding: 10px 0px;
+}
+
+figure p.title {
+    max-width: 420px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-indent: 0px;
+    font-size: small;
+    justify-content: space-between; /* or space-around */
+}
+
+figure p.title span {
+    display: block;
+    max-width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+figure p.title button {
+    width: 60px;
+}
+
+/*table*/
+figure.myTable {
+    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+}
+
+table {
+    margin: 5px 5px 20px 10px;
+    max-height: 600px;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+}
+
+table caption {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    font-size: medium;
+}
+
+th, td {
+    margin: 0 auto;
+    padding: 10px 10px;
+    min-width: 100px;
+    font-size: small;
+    overflow: auto;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    page-break-inside: avoid;
+}
+
+
+thead > tr:first-child {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+tbody > tr:last-child {
+  border-bottom: solid 1px;
+}
+
+tbody > tr:hover{
+  text-decoration: underline;
+  color: purple;
+}
+
+table > tbody > tr:nth-child(odd) {
+  background-color: #E0E0F2;
+}
