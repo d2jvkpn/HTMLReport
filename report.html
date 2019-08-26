@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf8">
+  <title>{{Project}} report</title>
+  <link rel="stylesheet" type="text/css" href="src/css/my.css">
+  <script type="text/javascript" src="src/js/index.js"> </script>
+</head>
+<br>
+
+<body onLoad="Index();">
+
+<section id="mySidenav" class="sidenav">
+  <p style="text-align:center; font-weight=median">Table of Content</p>
+</section>
+
+<header>
+  <p>HEADER HEADER HEADER HEADER HEADER HEADER</p>
+  <hr></hr>
+</header>
+
+<section id="main">
+  <div name="Introduction" id="indtroduction">
+    <p>some introduction</p>
+  </div>
+
+  <div name="level one report {{ xxxx }}" data-level=1>
+    <p>report figure and table demo, report figure and table demo, report
+      figure and table demo<a name="x1"></a>, report figure and table demo, report figure
+      and table demo.
+    </p>
+
+    <figure class="mySlide" name="A" data-file-match="src/img/*">
+      <img src="src/img/sound.jpg">
+    </figure>
+  </div>
+  <br>
+
+  <div name="level two Lena images" data-level=2>
+    <p>world</p>
+    <figure class="mySlide" name="B" data-file-match="src/data/lena_*.jpg">
+      <img src="src/data/lena_color.jpg">
+    </figure>
+    <small>images of lena: color, gray, light, mirror</small>
+  </div>
+  <br>
+
+  <div name="level three workbench" data-level=3>
+    <p>world<a name="x5"></a></p>
+    <figure class="mySlide">
+      <img src="src/img/workbench.jpg">
+    </figure>
+  </div>
+  <br>
+
+
+  <div name="level one data table" data-level=1>
+    <p>world<a name="x2"></a></p>
+    <figure class="myTable" name="NGS raw data summary" data-file="src/data/a.tsv" data-xcols=6 data-nrows=10 data-ncols=10>
+      <table>
+        <thead>
+          <tr><th></th><th>Control-1</th><th>Case-1</th><th>Case-2</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Reads</td><td>75.44M</td><td>66.54M</td><td>77.83M</td></tr>
+          <tr><td>Bases</td><td title="11.32G aaaaaaaaaa">11.32G aaaaaaaaaa</td><td title="9.98G bbbbbbbbbbbbbbbbbbbb">9.98G bbbbbbbbbbbbbbbbbbbb</td><td title="11.67G cccccccccc">11.67G cccccccccc</td></tr>
+          <tr><td>Q20 bases</td><td>94.03%</td><td>97.49%</td><td>94.29%</td></tr>
+          <tr><td>Q30 bases</td><td>86.35%</td><td>93.71%</td><td>86.86%</td></tr>
+          <tr><td>GC percentage</td><td>53.60%</td><td>51.42%</td><td>49.46%</td></tr>
+          <tr><td>Q20 bases</td><td>94.03%</td><td>97.49%</td><td>94.29%</td></tr>
+          <tr><td>Q30 bases</td><td>86.35%</td><td>93.71%</td><td>86.86%</td></tr>
+          <tr><td>Q20 bases</td><td>94.03%</td><td>97.49%</td><td>94.29%</td></tr>
+          <tr><td>Q30 bases</td><td>86.35%</td><td>93.71%</td><td>86.86%</td></tr>
+          <tr><td>GC percentage</td><td>53.60%</td><td>51.42%</td><td>49.46%</td></tr>
+          <tr><td>GC percentage</td><td>53.60%</td><td>51.42%</td><td>49.46%</td></tr>
+          <tr><td>Q20 bases</td><td>94.03%</td><td>97.49%</td><td>94.29%</td></tr>
+          <tr><td>Q30 bases</td><td>86.35%</td><td>93.71%</td><td>86.86%</td></tr>
+          <tr><td>Q20 bases</td><td>94.03%</td><td>97.49%</td><td>94.29%</td></tr>
+          <tr><td>Q30 bases</td><td>86.35%</td><td>93.71%</td><td>86.86%</td></tr>
+          <tr><td>GC percentage</td><td>53.60%</td><td>51.42%</td><td>49.46%</td></tr>
+        <tbody>
+     </table>
+    </figure>
+     <small>Reads: Bases:, Q10, Q20, Q30, N Bases</small>
+  </div>
+  <br>
+
+  <div name="level two workbench" data-level=2>
+    <p>world<a name="x1"></a></p>
+    <figure class="mySlide">
+      <img src="src/img/workbench.jpg">
+    </figure>
+  </div>
+  <br>
+
+  <div name="level three world" data-level=3>
+    <p>world<a name="x3"></a></p>
+  </div>
+
+
+  <div name="level three world again" data-level=3>
+    <p class="check"> hello </p>
+    <p>world<a name="x5"></a></p>
+    <div class="check" name="shold not exist" data-level=3 data-file="src/data/notexist.txt">
+      <p>shold not exist</p>
+    </div>
+  </div>
+
+
+  <div class="check" name="level three world again" data-level=3 data-file="src/data/notexist.txt">
+    <p>world<a name="x3"></a></p>
+  </div>
+
+  <div id="reference" name="Reference">
+    <p id="x1"> X 1.</p>
+    <p id="x2"> X 2.</p>
+    <p id="x3"> X 3.</p>
+    <p id="x4"> X 4.</p>
+    <p id="x5"> X 5.</p>
+  </div>
+</section>
+
+<footer>
+  <hr></hr>
+  <p>
+    &copy; d2jvkpn 2019 <a href=https://github.com/d2jvkpn target=_blank>visit  project</a>
+  </p>
+</footer>
+
+</body>
+</html>
