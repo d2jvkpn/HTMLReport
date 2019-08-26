@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+   PROJ0001 report
+    </title>
+    <link href="src/css/my.css" rel="stylesheet" type="text/css">
+    <script src="src/js/index.js" type="text/javascript">
+    </script>
+  </head>
+  <body onload="Index();">
+    <br>
+    <section class="sidenav" id="mySidenav">
+      <p style="text-align:center; font-weight=median">
+        Table of Content
+      </p>
+    </section>
+    <header>
+      <p>
+        HEADER HEADER HEADER HEADER HEADER HEADER
+      </p>
+      <hr>
+    </header>
+    <section id="main">
+      <div id="indtroduction" name="Introduction">
+        <p>
+          some introduction
+        </p>
+      </div>
+      <div data-level="1" name="level one report ">
+        <p>
+          report figure and table demo, report figure and table demo, report
+      figure and table demo
+          <a name="x1">
+          </a>
+          , report figure and table demo, report figure
+      and table demo.
+        </p>
+        <figure class="mySlide" data-file-match="src/img/*" name="A">
+          <img src="src/img/sound.jpg">
+          <img src="src/img/coffee.jpg">
+          <img src="src/img/workbench.jpg">
+        </figure>
+      </div>
+      <br>
+      <div data-level="2" name="level two Lena images">
+        <p>
+          world
+        </p>
+        <figure class="mySlide" data-file-match="src/data/lena_*.jpg" name="B">
+          <img src="src/data/lena_color.jpg">
+          <img src="src/data/lena_mirror.jpg">
+          <img src="src/data/lena_gray.jpg">
+          <img src="src/data/lena_light_lena_light_lena_light_lena_light_lena_light_lena_light.jpg">
+        </figure>
+        <small>
+          images of lena: color, gray, light, mirror
+        </small>
+      </div>
+      <br>
+      <div data-level="3" name="level three workbench">
+        <p>
+          world
+          <a name="x5">
+          </a>
+        </p>
+        <figure class="mySlide">
+          <img src="src/img/workbench.jpg">
+        </figure>
+      </div>
+      <br>
+      <div data-level="1" name="level one data table">
+        <p>
+          world
+          <a name="x2">
+          </a>
+        </p>
+        <figure class="myTable" data-file="src/data/a.tsv" data-ncols="10" data-nrows="10" data-xcols="6" name="NGS raw data summary">
+          <table>
+            <thead>
+              <tr style="text-align: right;">
+                <th>
+                  Gene Symbols
+                </th>
+                <th>
+                  Confidence
+                </th>
+                <th>
+                  Cyto Location
+                </th>
+                <th>
+                  Gene Name
+                </th>
+                <th>
+                  MIM Number
+                </th>
+                <th>
+                  Comments
+                </th>
+                <th>
+                  Phenotypes
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  CTRCT8, CCV
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1pter-p36.13
+                </td>
+                <td>
+                  Cataract, congenital, Volkmann type
+                </td>
+                <td>
+                  115665
+                </td>
+                <td>
+                  linked to Rh in Scottish family
+                </td>
+                <td>
+                  Cataract 8, multiple types (2)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ENO1, PPH, MPB1
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.23
+                </td>
+                <td>
+                  Enolase-1, alpha
+                </td>
+                <td>
+                  172430
+                </td>
+                <td>
+                </td>
+                <td>
+                  Enolase deficiency (1)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ERPL1, HLM2
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1pter-p36
+                </td>
+                <td>
+                  Endogenous retroviral pol gene-like sequence 1 (oncogene HLM2)
+                </td>
+                <td>
+                  131190
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  HMGCL
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.11
+                </td>
+                <td>
+                  3-hydroxy-3-methylglutaryl-Coenzyme A lyase
+                </td>
+                <td>
+                  613898
+                </td>
+                <td>
+                </td>
+                <td>
+                  HMG-CoA lyase deficiency, 246450 (3)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  AGRN, CMS8
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  Agrin
+                </td>
+                <td>
+                  103320
+                </td>
+                <td>
+                </td>
+                <td>
+                  Myasthenic syndrome, congenital, 8, with pre- and postsynaptic defects, 615120 (3)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  GNB1, MRD42
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  Guanine nucleotide-binding protein, beta polypeptide-1
+                </td>
+                <td>
+                  139380
+                </td>
+                <td>
+                </td>
+                <td>
+                  Mental retardation, autosomal dominant 42, 616973 (3); Leukemia, acute lymphoblastic, somatic, 613065 (3)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  SDC3, SYND3, SDCN
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p35.2
+                </td>
+                <td>
+                  Syndecan 3
+                </td>
+                <td>
+                  186357
+                </td>
+                <td>
+                </td>
+                <td>
+                  {Obesity, association with}, 601665 (3)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  SAI1, MTS1, TFS1
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1pter-p22.1
+                </td>
+                <td>
+                  Suppression of anchorage independence-1 (malignant transformation suppression-1)
+                </td>
+                <td>
+                  154280
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ATAD3A, HAYOS
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  ATPase family, AAA domain-containing, member 3A
+                </td>
+                <td>
+                  612316
+                </td>
+                <td>
+                  one family with AR inheritance reported
+                </td>
+                <td>
+                  Harel-Yoon syndrome, 617183 (3)
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ATAD3B, TOB3, KIAA1273
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  ATPase family, AAA domain-containing, member 3B
+                </td>
+                <td>
+                  612317
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr style="text-align: right;">
+                <th>
+                  Gene Symbols
+                </th>
+                <th>
+                  1_Confidence
+                </th>
+                <th>
+                  1_Cyto Location
+                </th>
+                <th>
+                  1_Gene Name
+                </th>
+                <th>
+                  1_MIM Number
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  CTRCT8, CCV
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1pter-p36.13
+                </td>
+                <td>
+                  Cataract, congenital, Volkmann type
+                </td>
+                <td>
+                  115665
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ENO1, PPH, MPB1
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.23
+                </td>
+                <td>
+                  Enolase-1, alpha
+                </td>
+                <td>
+                  172430
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ERPL1, HLM2
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1pter-p36
+                </td>
+                <td>
+                  Endogenous retroviral pol gene-like sequence 1 (oncogene HLM2)
+                </td>
+                <td>
+                  131190
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  HMGCL
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.11
+                </td>
+                <td>
+                  3-hydroxy-3-methylglutaryl-Coenzyme A lyase
+                </td>
+                <td>
+                  613898
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  AGRN, CMS8
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  Agrin
+                </td>
+                <td>
+                  103320
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  GNB1, MRD42
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  Guanine nucleotide-binding protein, beta polypeptide-1
+                </td>
+                <td>
+                  139380
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  SDC3, SYND3, SDCN
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p35.2
+                </td>
+                <td>
+                  Syndecan 3
+                </td>
+                <td>
+                  186357
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  SAI1, MTS1, TFS1
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1pter-p22.1
+                </td>
+                <td>
+                  Suppression of anchorage independence-1 (malignant transformation suppression-1)
+                </td>
+                <td>
+                  154280
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ATAD3A, HAYOS
+                </th>
+                <td>
+                  P
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  ATPase family, AAA domain-containing, member 3A
+                </td>
+                <td>
+                  612316
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ATAD3B, TOB3, KIAA1273
+                </th>
+                <td>
+                  C
+                </td>
+                <td>
+                  1p36.33
+                </td>
+                <td>
+                  ATPase family, AAA domain-containing, member 3B
+                </td>
+                <td>
+                  612317
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+        <small>
+          Reads: Bases:, Q10, Q20, Q30, N Bases
+        </small>
+      </div>
+      <br>
+      <div data-level="2" name="level two workbench">
+        <p>
+          world
+          <a name="x1">
+          </a>
+        </p>
+        <figure class="mySlide">
+          <img src="src/img/workbench.jpg">
+        </figure>
+      </div>
+      <br>
+      <div data-level="3" name="level three world">
+        <p>
+          world
+          <a name="x3">
+          </a>
+        </p>
+      </div>
+      <div data-level="3" name="level three world again">
+        <p class="check">
+          hello
+        </p>
+        <p>
+          world
+          <a name="x5">
+          </a>
+        </p>
+      </div>
+      <div id="reference" name="Reference">
+        <p id="x1">
+          X 1.
+        </p>
+        <p id="x2">
+          X 2.
+        </p>
+        <p id="x3">
+          X 3.
+        </p>
+        <p id="x4">
+          X 4.
+        </p>
+        <p id="x5">
+          X 5.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <hr>
+      <p>
+        &copy; d2jvkpn 2019
+        <a href="https://github.com/d2jvkpn" target="_blank">
+          visit  project
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
