@@ -27,14 +27,17 @@ body {
     display: block;
 }
 
-.sidenav a:hover {
-    color: black;
-    font-size: medium;
-    font-weight: bold;
-}
-
 a.nav1 {
     font-size: medium;
+}
+
+a.nav2 {
+    font-size: normal;
+}
+
+.sidenav a:hover {
+    color: black;
+    font-weight: bold;
 }
 
 /* paragraph */
