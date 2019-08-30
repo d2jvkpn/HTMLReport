@@ -2,6 +2,7 @@ import os, argparse
 from configparser import ConfigParser
 from glob import glob
 
+
 HELP = '''Generate HTML5 using template and ini confgiure.
 Specify html5:
   <"tag">.check to reserve an element: data-file, data-file-match, data-file-miss
