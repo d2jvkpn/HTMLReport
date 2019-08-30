@@ -4,7 +4,7 @@ from glob import glob
 
 HELP = '''Generate HTML5 using template and ini confgiure.
 Specify html5:
-  <"tag">.check to reserve an element: data-file, data-file-match, data-file-notexist
+  <"tag">.check to reserve an element: data-file, data-file-match, data-file-miss
   <div> attribution data-level: children of <div>#main
   <figure>.myTable binding data: data-file, data-xcols, data-ncols, data-nrows
   <figure>.mySlide binding data: data-file(comma as seperator), data-file-match
@@ -16,9 +16,9 @@ Specify html5:
 '''
 
 __author__ = "d2jvkpn"
-__version__ = "0.5"
-__release__ =  "2019-08-23"
-__project__ =  "https://github.com/d2jvkpn/PlayWebFront"
+__version__ = "0.6"
+__release__ =  "2019-08-30"
+__project__ =  "https://github.com/d2jvkpn/HTMLreport"
 __license__ = "GPLv3  (https://www.gnu.org/licenses/gpl-3.0.en.html)"
 
 
@@ -88,13 +88,13 @@ for i in remove:
     print("decompose element %s by id \"%s\""  % (el.name, i))
 
 
-## check file exits or file notexists to drop element
+## check file exits or file miss to drop element
 for el in main.find_all(attrs={"class" :"check"}, recursive=True):
     if el is None or el.attrs is None: continue
     if el.attrs.get("id", "") in reserve: continue
     ## don't split to a list
     p = el.attrs.get("data-file")
-    pn = el.attrs.get("data-file-notexist")
+    pn = el.attrs.get("data-file-miss")
     ps = el.attrs.get("data-file-match")
     drop = False
     if not (p is None) and p != "" and not os.path.exists(p): drop = True
