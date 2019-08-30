@@ -55,6 +55,7 @@ function chaIndex () {
                 e.innerHTML = t;
         }
         if (n <= 1) { e.setAttribute("class", "nav1");}
+        if (n == 2) { e.setAttribute("class", "nav2");}
         nav.appendChild(e);
         console.log("Add heading: " + t);
     }
