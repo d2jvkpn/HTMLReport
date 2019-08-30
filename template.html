@@ -11,7 +11,7 @@
 <body onLoad="Index();">
 
 <section id="mySidenav" class="sidenav">
-  <p style="text-align:center; font-weight=median">Table of Content</p>
+  <p style="text-align:center; font-size: medium">Table of Content</p>
 </section>
 
 <header>
@@ -21,13 +21,11 @@
 
 <section id="main">
   <div name="Introduction" id="indtroduction">
-    <p>some introduction</p>
+    <p>Please introduce this data analysis report.</p>
   </div>
 
-  <div name="level one report {{ xxxx }}" data-level=1>
-    <p>report figure and table demo, report figure and table demo, report
-      figure and table demo<a name="x1"></a>, report figure and table demo, report figure
-      and table demo.
+  <div name="Chapt A {{ xxxx }}" data-level=1>
+    <p>This is Chapt A<a name="x1"></a>.
     </p>
 
     <figure class="mySlide" name="A" data-file-match="src/img/*">
@@ -36,8 +34,8 @@
   </div>
   <br>
 
-  <div name="level two Lena images" data-level=2>
-    <p>world</p>
+  <div name="Chapt B show images slide" data-level=2>
+    <p>Lena images.</p>
     <figure class="mySlide" name="B" data-file-match="src/data/lena_*.jpg">
       <img src="src/data/lena_color.jpg">
     </figure>
@@ -45,8 +43,8 @@
   </div>
   <br>
 
-  <div name="level three workbench" data-level=3>
-    <p>world<a name="x5"></a></p>
+  <div name="Chapt C workbench 1" data-level=3>
+    <p>Cited<a name="x5"></a>.</p>
     <figure class="mySlide">
       <img src="src/img/workbench.jpg">
     </figure>
@@ -54,8 +52,8 @@
   <br>
 
 
-  <div name="level one data table" data-level=1>
-    <p>world<a name="x2"></a></p>
+  <div name="Chapt D data table" data-level=1>
+    <p>show a data table<a name="x2"></a>.</p>
     <figure class="myTable" name="NGS raw data summary" data-file="src/data/a.tsv" data-xcols=6 data-nrows=10 data-ncols=10>
       <table>
         <thead>
@@ -85,30 +83,28 @@
   </div>
   <br>
 
-  <div name="level two workbench" data-level=2>
-    <p>world<a name="x1"></a></p>
+  <div name="Chapt E implemented in multiple programming languages " data-level=2>
+    <p>Hello, BeautifulSoup, HTML5, CSS3 and Javascript<a name="x1"></a>.</p>
     <figure class="mySlide">
       <img src="src/img/workbench.jpg">
     </figure>
   </div>
   <br>
 
-  <div name="level three world" data-level=3>
-    <p>world<a name="x3"></a></p>
+  <div name="Chapt F a nice day" data-level=3>
+    <p>Hello world<a name="x3"></a>.</p>
   </div>
 
-
-  <div name="level three world again" data-level=3>
-    <p class="check"> hello </p>
-    <p>world<a name="x5"></a></p>
-    <div class="check" name="shold not exist" data-level=3 data-file="src/data/notexist.txt">
-      <p>shold not exist</p>
+  <div name="Chapt G check file exist" data-level=3>
+    <p> please cite<a name="x5"></a>.</p>
+    <div class="check" name="shold not exist" data-file="src/data/notexist.txt">
+      <p>does src/data/notexist.txt exist?</p>
     </div>
   </div>
 
-
-  <div class="check" name="level three world again" data-level=3 data-file="src/data/notexist.txt">
-    <p>world<a name="x3"></a></p>
+  <div class="check" name="Chapt H check miss file"
+    data-level=3 data-file-miss="src/data/notexist.txt">
+    <p>src/data/notexist.txt is miss and this chapt reserved<a name="x3"></a>.</p>
   </div>
 
   <div id="reference" name="Reference">
@@ -123,7 +119,8 @@
 <footer>
   <hr></hr>
   <p>
-    &copy; d2jvkpn 2019 <a href=https://github.com/d2jvkpn target=_blank>visit  project</a>
+    &copy; d2jvkpn 2019
+    <a href=https://github.com/d2jvkpn/HTMLreport target=_blank>visit  project</a>
   </p>
 </footer>
 
