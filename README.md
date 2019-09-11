@@ -8,8 +8,12 @@ Specify html data attributions:
 
 3. data-file-miss: remove a tag(class "check") if a file miss(exits).
 
-4. data-table-ncols: specify figure.myTable max columns of each table(split a pandas dataframe).
+4. data-xcols: specify figure.myTable max columns of each table(split a pandas dataframe).
 
-5. data-level: div children of id=main, an correspond level head(h1, h2, h3) will be create as first child.
+5. data-ncols: specify figure.myTable max columns to display(if greater than data-xcols, table will be split in vertical).
 
-6. reference process: id=reference (name="Reference").
+6. data-nrows: specify figure.myTable max rows to display.
+
+7. data-level: div children of id=main, an correspond level head(h1, h2, h3) will be create as first child.
+
+8. reference process: id=reference (name="Reference").
