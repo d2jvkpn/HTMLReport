@@ -6,7 +6,7 @@ Specify html data attributions:
 
 2. data-file-match: remove a tag(class "check") if no match files, and reset image files of figure.mySlide.
 
-3. data-file-notexist: remove a tag(class "check") if a file exits.
+3. data-file-miss: remove a tag(class "check") if a file miss(exits).
 
 4. data-table-ncols: specify figure.myTable max columns of each table(split a pandas dataframe).
 
