@@ -183,7 +183,7 @@ function refIndex() {
         var anchors = document.getElementsByName(p.id);
 
         if (p.id == "") {
-            console.log("Skip referenc withoutid");
+            console.log("Skip reference withoutid");
         }
 
         if (anchors.length == 0) {
@@ -197,13 +197,13 @@ function refIndex() {
 
         n+=1;
         console.log("Found anchor(s) match reference: " + p.id);
-        p.innerHTML = "[" + n + "] " + p.innerText.replace(/^\s+|\s+$/g, '');
-
+        //p.innerHTML = "[" + n + "] " + p.innerText.replace(/^\s+|\s+$/g, '');
+        p.innerHTML = "[" + n + "] " + p.innerHTML;
         for (let a of anchors) {
             a.href = "#" + a.name;
             a.innerHTML = "[" + n + "]";
             a.style.textDecoration = "none";
-            a.title = p.innerHTML;
+            a.title = p.innerText;
         }
     }
 }
