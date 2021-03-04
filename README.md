@@ -6,14 +6,11 @@ Specify html data attributions:
 
 2. data-file-match: remove a tag(class "check") if no match files, and reset image files of figure.mySlide.
 
-3. data-file-miss: remove a tag(class "check") if a file miss(exits).
+3. data-file-notexist: remove a tag(class "check") if a file exits.
 
-4. data-xcols: specify figure.myTable max columns of each table(split a pandas dataframe).
+4. data-table-ncols: specify figure.myTable max columns of each table(split a pandas dataframe).
 
-5. data-ncols: specify figure.myTable max columns to display(if greater than data-xcols, table will be split in vertical).
+5. data-level: div children of id=main, an correspond level head(h1, h2, h3) will be create as first child.
 
-6. data-nrows: specify figure.myTable max rows to display.
+6. reference process: id=reference (name="Reference").
 
-7. data-level: div children of id=main, an correspond level head(h1, h2, h3) will be create as first child.
-
-8. reference process: id=reference (name="Reference").

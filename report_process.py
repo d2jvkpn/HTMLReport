@@ -1,7 +1,6 @@
-import os, argparse
+import os, argparse, json
 from configparser import ConfigParser
 from glob import glob
-
 
 HELP = '''Generate HTML5 using template and ini confgiure.
 Specify html5:
@@ -17,7 +16,7 @@ Specify html5:
 '''
 
 __author__ = "d2jvkpn"
-__version__ = "0.6"
+__version__ = "0.7"
 __release__ =  "2019-08-30"
 __project__ =  "https://github.com/d2jvkpn/HTMLreport"
 __license__ = "GPLv3  (https://www.gnu.org/licenses/gpl-3.0.en.html)"
@@ -67,12 +66,20 @@ dm = {"Project": "Play Web Front", "lang": "en"}
 
 for p in cfgs:
     if p == "": continue
-    cfg = ConfigParser ()
-    cfg.optionxform = str
-    with open(p, "r") as f: s = f.read()
-    cfg.read_string ("[DEFAULT]\n" + s)
-    d = dict(cfg.defaults())
-    for k in d: dm[k] = d[k] if d[k] != "" else dm.get(k, "")
+    if p.endswith(".ini") or p.endswith(".cfg"):
+        cfg = ConfigParser ()
+        cfg.optionxform = str
+        with open(p, "r") as f: s = f.read()
+        cfg.read_string ("[DEFAULT]\n" + s)
+        d = dict(cfg.defaults())
+        for k in d: dm[k] = d[k] if d[k] != "" else dm.get(k, "")
+    elif p.endswith(".json"):
+        with open(p, "r") as f:
+            d = json.load(d)
+
+        for k in d: dm[k] = d[k] if d[k] != "" else dm.get(k, "")
+    else:
+        os.exit("config file \"%s\" is neither ini/cfg or json" % p)
 
 with open(templ, "r") as f: soup = BeautifulSoup(f.read(), 'html5lib')
 main = soup.find(id="main")
